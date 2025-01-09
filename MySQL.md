@@ -2,7 +2,7 @@
 
 - 化归：了解一题多解，但是我们这里只详细收录通解或者上位解
 
-# 0x01 pymysql
+# pymysql
 
 ## 代码框架
 
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     conn.close()
 ```
 
-[03 commit](#03 commit)<a id='03'></a>
+[03 commit](#0x03)<a id='03'></a>
 
 ## pymsql的insert方法
 
@@ -62,7 +62,7 @@ if __name__ == '__main__':
   | `fetchmany(size=None)` | 每次提取指定数量（`size`）的记录；如果没有更多记录可提取，返回空列表 `[]`。如果未指定 `size` 参数，则默认使用游标的 `arraysize` （`PyMySQL`中默认为`1`）属性值。 | 列表（包含最多 `size` 条元组） |
   | `fetchall()`           | 提取查询结果中所有剩余的记录；如果没有更多记录可提取，返回空列表 `[]`。 | 列表（包含所有剩余的记录元组） |
 
-[^1.移动游标方式]:`scroll(value, mode='relative'/'absolute')`，其中`value`的值正向前负向后，`absolute`模式`0`为起始。
+[^1.移动游标方式]: `scroll(value, mode='relative'/'absolute')`，其中`value`的值正向前负向后，`absolute`模式`0`为起始。
 
 # 0x02 MySQL
 
@@ -106,6 +106,7 @@ if __name__ == '__main__':
 	WHERE 条件;
 
 ```
+
 [01 charset_name和collation_name](#01 charset_name和collation_name)<a id='01'></a>
 
 [02 datatype](#02 datatype)<a id='02'></a>
@@ -215,9 +216,9 @@ MySQL支持的字段属性包括：
   - mediumtext：可变长度，最多2的24次方-1个字符
   - longtext：可变长度，最多2的32次方-1个字符
 
-## 03 commit
+## 03 commit 
 
-[返回原文](#03)<a id="03 commit"></a>
+[返回原文](#03)<a id="0x03"></a>
 
 - MySQL 默认启用**自动提交模式**（`autocommit=1`），使用`SET autocommit=0;`修改；在默认情况下，PyMySQL 不开启自动提交模式，使用`conn.autocommit(True)`来开启。
 
