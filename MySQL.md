@@ -215,9 +215,9 @@ MySQL支持的字段属性包括：
   - mediumtext：可变长度，最多2的24次方-1个字符
   - longtext：可变长度，最多2的32次方-1个字符
 
-## 03 commit <a id="03 commit"></a>
+## 03 commit
 
-[返回原文](#03)
+[返回原文](#03)<a id="03 commit"></a>
 
 - MySQL 默认启用**自动提交模式**（`autocommit=1`），使用`SET autocommit=0;`修改；在默认情况下，PyMySQL 不开启自动提交模式，使用`conn.autocommit(True)`来开启。
 
